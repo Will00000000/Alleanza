@@ -60,7 +60,7 @@ public class JogadorTop : MonoBehaviour
         {
             anima.SetFloat ("AndandoCimaBaixo", 0);
         }
-        if (rig.velocity.y < 0)
+        if (rig.velocity.y < 0);
         {
             anima.SetFloat ("AndandoCimaBaixo", -1);
         }
