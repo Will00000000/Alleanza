@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     RectTransform rt;
+    CanvasGroup colisaoCanvas;
 
     private void Awake ()
     {
@@ -14,24 +15,21 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnBeginDrag (PointerEventData eventData)
     {
-        Debug.Log ("OnBegin");
+        colisaoCanvas.blocksRaycasts = false;
     }
 
     public void OnDrag (PointerEventData eventData)
     {
         rt.anchoredPosition += eventData.delta;
-        Debug.Log ("OnDrag");
     }
 
     public void OnEndDrag (PointerEventData eventData)
     {
-        //throw new System.NotImplementedException ();
-        Debug.Log ("Saiu");
+        colisaoCanvas.blocksRaycasts = true;
     }
 
     public void OnPointerDown (PointerEventData eventData)
     {
-        //throw new System.NotImplementedException ();
         Debug.Log ("Pointer");
     }
 }
