@@ -3,29 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    RectTransform rt;
-    CanvasGroup colisaoCanvas;
+    private RectTransform rt;
 
     private void Awake ()
     {
         rt = GetComponent <RectTransform> ();
-        colisaoCanvas = GetComponent <CanvasGroup> ();
     }
 
     public void OnBeginDrag (PointerEventData eventData)
     {
-        colisaoCanvas.blocksRaycasts = false;
+        Debug.Log ("Começou a arrastar");
     }
 
     public void OnDrag (PointerEventData eventData)
     {
+        Debug.Log ("Está arrastando");
         rt.anchoredPosition += eventData.delta;
     }
 
     public void OnEndDrag (PointerEventData eventData)
     {
-        colisaoCanvas.blocksRaycasts = true;
+        Debug.Log ("Terminou de arrastar");
+
+    }
+    public void OnPointerDown (PointerEventData eventData)
+    {
+        Debug.Log ("Clicou no item");
     }
 }
