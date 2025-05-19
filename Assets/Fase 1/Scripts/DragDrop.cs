@@ -5,11 +5,13 @@ using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    private RectTransform rt;
+    RectTransform rt;
+    CanvasGroup colide;
 
     private void Awake ()
     {
         rt = GetComponent <RectTransform> ();
+        colide = GetComponent <CanvasGroup> ();
     }
 
     public void OnBeginDrag (PointerEventData eventData)
@@ -21,15 +23,17 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         Debug.Log ("Está arrastando");
         rt.anchoredPosition += eventData.delta;
+        colide.blocksRaycasts = false;
     }
 
     public void OnEndDrag (PointerEventData eventData)
     {
-        Debug.Log ("Terminou de arrastar");
-
+        Debug.Log ("Parou de arrastar");
+        colide.blocksRaycasts = true;
     }
+
     public void OnPointerDown (PointerEventData eventData)
     {
-        Debug.Log ("Clicou no item");
+        Debug.Log ("Clicou");
     }
 }
