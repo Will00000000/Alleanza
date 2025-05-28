@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ControlePecas : MonoBehaviour
 {
-    public RectTransform sombra;
+    /*public RectTransform sombra;
     RectTransform peca;
     
     void Awake ()
     {
         peca = GetComponent <RectTransform> ();
         peca.sizeDelta = sombra.sizeDelta;
-    }
+    }*/
 }
