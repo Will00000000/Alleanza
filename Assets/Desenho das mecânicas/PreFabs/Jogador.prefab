@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1845492897, guid: f2af7c07d281f1048a553f53d0b0b822, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1370c506c88def34ea2af04a3e5e50d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,7 +123,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.78, y: 0.91}
+    oldSize: {x: 30.24, y: 40.319996}
     newSize: {x: 0.78, y: 0.91}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -173,4 +173,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   velocidadeDash: 40
-  cameraJogo: {fileID: 0}
+  destino: {x: 0, y: 0}
+  mover: {x: 0, y: 0}
+  destinoCam: {x: 0, y: 0, z: 0}
+  DashAtivado: 0
+  CamSeguindo: 1
+  anima: {fileID: 0}
+  sprd: {fileID: 0}
+  fragmentoFilho: {fileID: 0}
+  jogadorParente: {fileID: 0}
