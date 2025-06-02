@@ -19,8 +19,6 @@ public class Drop : MonoBehaviour, IDropHandler
     {
         if (eventData.pointerDrag != null)
         {
-            Debug.Log ("Dropou1");
-
             eventData.pointerDrag.GetComponent <RectTransform> ().anchoredPosition = GetComponent <RectTransform> ().anchoredPosition;
 
             if (eventData.pointerDrag.gameObject.tag == gameObject.tag) //se a posição da sombra for igual a posição da peça que está sendo arrastada (e) a tag da sombra for igual a tag do objeto que foi conectado

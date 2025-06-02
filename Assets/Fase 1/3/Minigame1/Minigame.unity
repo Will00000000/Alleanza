@@ -259,6 +259,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6995432072637308365, guid: 0dcda93d625b0634d8b6dc9caa2ee342, type: 3}
+      propertyPath: corPeca.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995432072637308365, guid: 0dcda93d625b0634d8b6dc9caa2ee342, type: 3}
+      propertyPath: corPeca.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995432072637308365, guid: 0dcda93d625b0634d8b6dc9caa2ee342, type: 3}
+      propertyPath: corPeca.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3930,6 +3942,10 @@ PrefabInstance:
       value: "Pe\xE7a25 - final"
       objectReference: {fileID: 0}
     - target: {fileID: 6851523181900989142, guid: 0dcda93d625b0634d8b6dc9caa2ee342, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851523181900989142, guid: 0dcda93d625b0634d8b6dc9caa2ee342, type: 3}
       propertyPath: m_TagString
       value: 25
       objectReference: {fileID: 0}
@@ -7555,6 +7571,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 751197481749707670, guid: a548e7f3f86311040b2354832e30c839, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130661722265031052, guid: a548e7f3f86311040b2354832e30c839, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130661722265031052, guid: a548e7f3f86311040b2354832e30c839, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130661722265031052, guid: a548e7f3f86311040b2354832e30c839, type: 3}
+      propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3130661722265031052, guid: a548e7f3f86311040b2354832e30c839, type: 3}
