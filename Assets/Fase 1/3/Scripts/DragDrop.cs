@@ -5,12 +5,12 @@ using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    RectTransform rt;
+    public RectTransform rt;
     CanvasGroup colide;
 
     private void Awake ()
     {
-        rt = GetComponent <RectTransform> ();
+        rt = GetComponent <RectTransform> (); //atribui a posição da peça para a variável "rt"
         colide = GetComponent <CanvasGroup> ();
     }
 
