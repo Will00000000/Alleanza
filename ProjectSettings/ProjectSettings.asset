@@ -833,8 +833,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Alleanza v34 - TCA
-  metroPackageVersion: 
+  metroPackageName: Alleanzav34-TCA
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -842,7 +842,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Alleanza v34 - TCA
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Alleanza v34 - TCA
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
