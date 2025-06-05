@@ -10,15 +10,24 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     RectTransform rt;
     CanvasGroup colide;
 
-    public Image sombra;
+    public RectTransform sombra;
+
+    //float larguraPeca, alturaPeca; //variáveis que recebem a largura e a altura da peça
 
     void Start ()
     {
-        
+        /*sombra = GetComponent <RectTransform> (); //acessar o RectTransform da sombra
+        larguraPeca = sombra.rect.width; //atribui a largura da sombra para a largura da peça
+
+        larguraPeca = rt.rect.width; //atribui a largura da imagem para a largura da peça
+
+        rt.rect.width=larguraPeca;*/
     }
 
     private void Awake ()
     {
+        
+
         rt = GetComponent <RectTransform> (); //atribui a posição da peça para a variável "rt"
         colide = GetComponent <CanvasGroup> ();
     }
@@ -41,11 +50,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     }
 
     public void OnPointerDown (PointerEventData eventData)
-    {
-
-    }
-
-    void VerificarCor ()
     {
 
     }
