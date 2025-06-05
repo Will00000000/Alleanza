@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -7,6 +8,8 @@ public class Drop : MonoBehaviour, IDropHandler
 {
     public RectTransform posicaoSombra; //acessar a posição da sombra que recebeu o drop
     bool correta; //variável que diz se a peça conectada é a correta ou não
+    
+    DragDrop corPeca, peca;
 
     DragDrop arrastar; //pega o script de arrastar peças
 
@@ -29,6 +32,7 @@ public class Drop : MonoBehaviour, IDropHandler
             else
             {
                 correta = false; //a peça está incorreta
+                
                 Debug.Log ("Incorreta");
             }
         }

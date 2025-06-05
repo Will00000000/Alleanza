@@ -1,13 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    public RectTransform rt;
+    RectTransform rt;
     CanvasGroup colide;
+
+    public Image sombra;
+
+    void Start ()
+    {
+        
+    }
 
     private void Awake ()
     {
