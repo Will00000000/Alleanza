@@ -285,6 +285,52 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3893430173534967751, guid: 0dcda93d625b0634d8b6dc9caa2ee342, type: 3}
   m_PrefabInstance: {fileID: 52439964}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &43028208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 43028210}
+  - component: {fileID: 43028209}
+  m_Layer: 0
+  m_Name: GerenciadorCursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &43028209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43028208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e224de84abf4f70428f11b4742da4ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureAberta: {fileID: 2800000, guid: 1bf3892fc7f73a04cad5ab6f13f517c3, type: 3}
+  cursorTextureFechada: {fileID: 2800000, guid: 9df73c783489a7347bc99e85a82304a8, type: 3}
+--- !u!4 &43028210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43028208}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.0589244, y: -0.26710194, z: 0.023406975}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &52439964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3570,7 +3616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -170}
+  m_AnchoredPosition: {x: 9, y: -170}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &869167532
@@ -8780,3 +8826,4 @@ SceneRoots:
   - {fileID: 355170139}
   - {fileID: 1045388111}
   - {fileID: 81935955}
+  - {fileID: 43028210}
