@@ -1,6 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GerenciadorCursor : MonoBehaviour
 {
@@ -8,18 +8,22 @@ public class GerenciadorCursor : MonoBehaviour
 
     private Vector2 cursorHotspot;
 
-    // Start is called before the first frame update
     void Start()
     {
-        cursorHotspot = new Vector2 (0, 0);
-        Cursor.SetCursor (cursorTextureAberta, cursorHotspot, CursorMode.Auto);
+        cursorHotspot = new Vector2(0, 0);
+        Cursor.SetCursor(cursorTextureAberta, cursorHotspot, CursorMode.Auto);
     }
 
-    void Update ()
+    public void OnCursor(InputAction.CallbackContext context)
     {
-        if (Input.GetMouseButtonDown (0))
+        if (context.phase == InputActionPhase.Performed)
         {
-            Cursor.SetCursor (cursorTextureFechada, cursorHotspot, CursorMode.Auto);
+            Cursor.SetCursor(cursorTextureFechada, cursorHotspot, CursorMode.Auto);
+        }
+
+        if (context.phase == InputActionPhase.Canceled)
+        {
+            Cursor.SetCursor (cursorTextureAberta, cursorHotspot, CursorMode.Auto);
         }
     }
 }
