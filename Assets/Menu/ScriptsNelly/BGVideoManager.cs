@@ -12,7 +12,7 @@ public class BGVideoManager: MonoBehaviour
     void Start()
     {
         //videoPlayer.source = VideoSource.Url;
-        //videoPlayer.url = Application.streamingAssetsPath + "/Video2Loop.mp4";
+        //videoPlayer.url = Application.streamingAssetsPath + "/Video2Loop.mp4"; //provisório para futura aplicação
 
         videoPlayer.isLooping = true;
         videoPlayer.audioOutputMode = VideoAudioOutputMode.None;

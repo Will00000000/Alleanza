@@ -19,8 +19,9 @@ public class JogadorTop : MonoBehaviour
     public Animator anima;
     public SpriteRenderer sprd;
 
-    //MINIGAME
-    public Transform fragmentoFilho, jogadorParente;
+    [Header("Minigame")]
+    public Transform fragmentoFilho;
+    public Transform jogadorParente;
 
     // Start is called before the first frame update
     void Start()
@@ -66,9 +67,9 @@ public class JogadorTop : MonoBehaviour
         }
     }
 
-    public void OnMover (InputAction.CallbackContext context)
+    public void OnMover(InputAction.CallbackContext context)
     {
-        mover = context.ReadValue <Vector2> ();
+        mover = context.ReadValue<Vector2>();
     }
 
     void OnTriggerEnter2D (Collider2D col)
