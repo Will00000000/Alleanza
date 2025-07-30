@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,7 +12,7 @@ public class JogadorTop : MonoBehaviour
     private Camera visaoAtaque;
 
     [Header ("Animação")]
-    public Animator anima;
+    Animator anima;
     public SpriteRenderer sprd;
 
     [Header("Minigame")]
@@ -38,38 +34,14 @@ public class JogadorTop : MonoBehaviour
         }
 
         rig.velocity = mover * velocidade;
-        
-        if (rig.velocity.x > 0)
-        {
-            anima.SetFloat ("AndandoLados", 1);
-            sprd.flipX = false;
-        }
-        if (rig.velocity.x == 0)
-        {
-            anima.SetFloat ("AndandoLados", 0);
-        }
-        if (rig.velocity.x < 0)
-        {
-            anima.SetFloat ("AndandoLados", -1);
-            sprd.flipX = true;
-        }
-        if (rig.velocity.y > 0)
-        {
-            anima.SetFloat ("AndandoCimaBaixo", 1);
-        }
-        if (rig.velocity.y == 0)
-        {
-            anima.SetFloat ("AndandoCimaBaixo", 0);
-        }
-        if (rig.velocity.y < 0);
-        {
-            anima.SetFloat ("AndandoCimaBaixo", -1);
-        }
     }
 
     public void OnMover(InputAction.CallbackContext context)
     {
         mover = context.ReadValue<Vector2>();
+        Debug.Log(rig.velocity);
+
+        anima.SetFloat("SideMove", Mathf.Abs (mover.x));
     }
 
     void OnTriggerEnter2D (Collider2D col)

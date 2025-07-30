@@ -2,7 +2,7 @@
     "name": "ControleJogador",
     "maps": [
         {
-            "name": "JogadorTop2D",
+            "name": "JogadorTop",
             "id": "72d4cf48-f436-4080-af04-f41d93ae3b60",
             "actions": [
                 {

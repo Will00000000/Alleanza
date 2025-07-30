@@ -214,25 +214,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 902856190193114609, guid: 032b56c23e9f68645a2973e2e8947430, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5343933573526180817, guid: 032b56c23e9f68645a2973e2e8947430, type: 3}
       propertyPath: m_Name
       value: Jogador
-      objectReference: {fileID: 0}
-    - target: {fileID: 7917969892716137283, guid: 032b56c23e9f68645a2973e2e8947430, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.01939224
-      objectReference: {fileID: 0}
-    - target: {fileID: 7917969892716137283, guid: 032b56c23e9f68645a2973e2e8947430, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.01939224
-      objectReference: {fileID: 0}
-    - target: {fileID: 7917969892716137283, guid: 032b56c23e9f68645a2973e2e8947430, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.01939224
       objectReference: {fileID: 0}
     - target: {fileID: 7917969892716137283, guid: 032b56c23e9f68645a2973e2e8947430, type: 3}
       propertyPath: m_LocalPosition.x
@@ -277,8 +261,73 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5343933573526180817, guid: 032b56c23e9f68645a2973e2e8947430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1301133632}
   m_SourcePrefab: {fileID: 100100000, guid: 032b56c23e9f68645a2973e2e8947430, type: 3}
+--- !u!1 &1301133624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5343933573526180817, guid: 032b56c23e9f68645a2973e2e8947430, type: 3}
+  m_PrefabInstance: {fileID: 613752511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1301133627 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8254580052704621613, guid: 032b56c23e9f68645a2973e2e8947430, type: 3}
+  m_PrefabInstance: {fileID: 613752511}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301133624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ec5db023aca6a498dd0788eba48f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1301133632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301133624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 01b2c51079547a1409e8ff91e42e7848, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1301133627}
+        m_TargetAssemblyTypeName: JogadorTop, Assembly-CSharp
+        m_MethodName: OnMover
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 71db24e9-3551-4803-8a83-ff97b9465819
+    m_ActionName: JogadorTop/Mover[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: JogadorTop
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1755821260
 GameObject:
   m_ObjectHideFlags: 0
